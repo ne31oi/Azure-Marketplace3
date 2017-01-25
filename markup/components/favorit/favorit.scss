@@ -1,0 +1,47 @@
+.favorit{
+    .title{
+        margin-bottom: 84px;
+    }
+    text-align: center;
+    padding-top: 68px;
+
+    &__item{
+        width: 205px;
+        overflow: hidden;
+        height: 305px;
+        margin-right: 42px;
+        &:nth-child(4n){
+            margin-right: 0;
+        }
+        &_image{
+            border: solid 2px #d7d7d7;
+            height: 122px;
+            line-height: 122px;
+            margin-bottom: 22px;
+            transition: border .5s ;
+        }
+        &_text{
+            word-wrap: break-word;
+            color: $dark;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 24px;
+            text-align: left;
+            transition: color .5s ;
+        }
+        &:hover{
+            .favorit{
+
+                &__item{
+                    &_image{
+                        border: solid 2px $green;
+                    }
+                    &_text{
+                        color: $green;
+                    }
+                }
+            }
+        }
+
+    }
+}

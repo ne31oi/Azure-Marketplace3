@@ -1,0 +1,47 @@
+.azure-header{
+    height: 69px;
+    border-bottom: 5px #eee solid;
+   // position: fixed;
+    width: 100%;
+    line-height: 69px;
+    color: $lgray;
+    font-size: 16px;
+    font-weight: 400;
+}
+.header{
+    &__logo{
+
+    }
+    &__social{
+        a{
+            color: $white;
+        }
+    }
+}
+
+.social-icon{
+    margin-left: 8px;
+    margin-bottom: -5px;
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    overflow: hidden;
+    line-height: 23px;
+    text-align: center;
+    font-weight: bold;
+
+
+
+    &_fb{
+        background:#2d5daf;
+        &:hover{
+            background: lighten(#2d5daf,10%);
+        }
+    }
+    &_vk{
+        background:#587a9e;
+        &:hover{
+            background: lighten(#587a9e,10%);
+        }
+    }
+}

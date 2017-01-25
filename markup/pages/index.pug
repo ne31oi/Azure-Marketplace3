@@ -2,7 +2,9 @@ doctype html
 html(class="no-js", lang="ru")
 
     include ../components/head/head.pug
-    include ../components/example/example.pug
+    include ../components/header/header.pug
+    include ../components/favorit/favorit.pug
+    include ../components/russia/russia.pug
     include ../components/footer/footer.pug
 
     head
@@ -10,10 +12,10 @@ html(class="no-js", lang="ru")
     body.page
         |%=symbols=%
 
-        section.page__wrapper
-
-            //- Include your components here
-            +example()
+        main.page__wrapper
+            +header()
+            +favorit()
+            +russia()
 
             .page__buffer
 

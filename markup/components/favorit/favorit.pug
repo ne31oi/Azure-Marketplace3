@@ -1,0 +1,11 @@
+mixin favorit(data)
+    section.favorit
+        .row
+            h2.title    Избранные решения Azure Marketplace
+            .row
+                -var favorit_item = [{class:wowza,text:"Wowza Streaming Engine"},{class:kaspersky,text:"Kaspersky AV for Windows Servers Enterprise"},{class:barracuda,text:"Решения безопасности от Barracuda"},{class:oracle,text:"Сертифицирован- ные решения компании Oracle"},{class:coreos,text:"CoreOS"},{class:opensourse,text:"WordPress, Drupal и другие Open Source-решения"},{class:datameer,text:"Datameer https"},{class:zend,text:"PHP-Zend Server — Cертифицирован- ный PHP-сервер"}]
+                ul
+                    for item in favorit_item
+                        li.favorit__item(class=item.class)
+                            .favorit__item_image
+                            p.favorit__item_text= item.text

@@ -1,0 +1,17 @@
+.russia{
+    background: $blue;
+    padding: 34px;
+    &__image{
+        width: 25%;
+        padding-left: 22px;
+    }
+    &__text{
+        width: 75%;
+        color: $white;
+        padding-left: 70px;
+        &__link{
+            color: $green;
+            font-weight:bold;
+        }
+    }
+}

@@ -1,11 +1,22 @@
 // Common styles of the project
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
 html, body {
     height: 100%;
 }
-
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
 .page {
-    
+
 }
 
 .page__wrapper {
@@ -19,4 +30,23 @@ html, body {
 
 .page__buffer {
     height: 50px;
+}
+.row{
+    width: 960px;
+    margin: 0 auto;
+    @include cf;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.title{
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: -0.48px;
+    line-height: 54px;
+    color: $dark;
+    text-align: center;
 }
