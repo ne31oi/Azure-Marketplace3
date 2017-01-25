@@ -12,6 +12,10 @@
         &__link{
             color: $green;
             font-weight:bold;
+            transition: color .5s;
+            &:hover{
+                color: lighten($green,10%);
+            }
         }
     }
 }
