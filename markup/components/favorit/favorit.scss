@@ -1,4 +1,6 @@
 .favorit{
+    background: url("../../static/img/general/cloud.png") no-repeat 145% 70%,
+    url("../../static/img/general/cloud.png") no-repeat -45% 40%;
     .title{
         margin-bottom: 84px;
     }
@@ -10,24 +12,74 @@
         overflow: hidden;
         height: 305px;
         margin-right: 42px;
+
         &:nth-child(4n){
             margin-right: 0;
         }
         &_image{
             border: solid 2px #d7d7d7;
             height: 122px;
-            line-height: 122px;
+
             margin-bottom: 22px;
             transition: border .5s ;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            //background-position: 50% 50%;
         }
         &_text{
             word-wrap: break-word;
             color: $dark;
-            font-size: 22px;
+            font-size: 21px;
             font-weight: 600;
             line-height: 24px;
             text-align: left;
+            display: block;
             transition: color .5s ;
+        }
+
+        .wowza{
+            width: 157px;
+            height: 49px;
+            background-position: -365px -102px;
+        }
+        .kaspersky{
+            width: 164px;
+            height: 41px;
+            background-position: -1px -155px;
+        }
+        .barracuda{
+            width: 171px;
+            height: 44px;
+            background-position: -1px -1px;
+
+        }
+        .oracle{
+            width: 169px;
+            height: 84px;
+            background-position: -1px -278px;
+        }
+        .coreos{
+            width: 146px;
+            height: 44px;
+            background-position: -1px -47px;
+        }
+        .opensourse{
+            width: 138px;
+            height: 78px;
+            background-position: -1px -198px;
+        }
+        .datameer{
+            width: 180px;
+            height: 60px;
+            background-position: -1px -93px;
+        }
+        .zend{
+            width: 160px;
+            height: 75px;
+            background-position: -343px -204px;
         }
         &:hover{
             .favorit{
@@ -35,6 +87,31 @@
                 &__item{
                     &_image{
                         border: solid 2px $green;
+                        .wowza{
+                            background-position: -365px -153px;
+                        }
+                        .kaspersky{
+                            background-position: -167px -155px;
+                        }
+                        .barracuda{
+                            background-position: -174px -1px;
+
+                        }
+                        .oracle{
+                            background-position: -172px -278px;
+                        }
+                        .coreos{
+                           background-position: -149px -47px;
+                        }
+                        .opensourse{
+                           background-position: -141px -198px;
+                        }
+                        .datameer{
+                           background-position: -181px -93px;
+                        }
+                        .zend{
+                            background-position: -343px -281px;
+                        }
                     }
                     &_text{
                         color: $green;
@@ -43,5 +120,22 @@
             }
         }
 
+    }
+
+}
+@media (max-width: 480px) {
+    .favorit{
+        background: url("../../static/img/general/cloud.png") no-repeat 145% 10%,
+        url("../../static/img/general/cloud.png") no-repeat -45% 90%;
+        &__item{
+            width: 200px;
+            margin: 0;
+            &:nth-child(odd){
+                float: left;
+            }
+            &:nth-child(even){
+                float: right;
+            }
+        }
     }
 }

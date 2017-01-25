@@ -1,7 +1,7 @@
 .title_resources{
     text-align: left;
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding-top: 16px;
+    padding-bottom: 30px;
 }
 .resources{
     &__item{
@@ -10,32 +10,42 @@
         border: $blue solid 2px;
         color: $blue;
         transition: all .3s;
-        margin-right: 22px;
-        margin-bottom: 25px;
-        font-weight: bold;
-        &_one{
-            width: 557px;
 
+        margin-bottom: 25px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+
+        &_one{
+            width: 556px;
+            margin-right: 22px;
         }
         &_two{
             width: 380px;
+            margin-right: 0;
+
         }
         &_three{
-            width: 338px;
+            width: 336px;
+            margin-right: 24px;
         }
         &_four{
             width: 364px;
+            margin-right: 24px;
         }
         &_five{
-            width: 210px;
-        }
-        &:nth-child(2),&:nth-child(5){
+            width: 209px;
             margin-right: 0;
+
         }
+
         &:hover{
             background-color: $green;
             border-color: $green;
             color: $white;
         }
     }
+}
+@media (max-width: 480px) {
+
 }

@@ -10,7 +10,13 @@
 }
 .header{
     &__logo{
-
+        width: 94px;
+        height: 20px;
+        background-size:cover;
+        background:url("../../static/img/general/Logo.png") no-repeat;
+        text-visibility: hidden;
+        overflow: hidden;
+        margin-top: 24px;
     }
     &__social{
         a{

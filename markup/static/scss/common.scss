@@ -34,6 +34,8 @@ li{
 .row{
     width: 960px;
     margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
     @include cf;
 }
 .left{
@@ -49,4 +51,23 @@ li{
     line-height: 54px;
     color: $dark;
     text-align: center;
+}
+.sprite{
+    background-image: url("../../static/img/general/sprite.png");
+    background-repeat: no-repeat;
+    margin: auto;
+}
+@media (max-width: 480px) {
+    .row{
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .right{
+        float: right;
+
+    }
+    .title{
+        font-size: 40px;
+    }
 }

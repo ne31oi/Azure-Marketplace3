@@ -1,0 +1,56 @@
+.decision{
+    &__list{
+        position: relative;
+        li{
+            width: 19.9%;
+
+            display: block;
+            float: left;
+
+        }
+        &__num{
+            width: 82px;
+            height: 82px;
+            background: $lblue;
+            border-radius: 50%;
+            line-height: 82px;
+            color: $white;
+            font-size: 48px;
+            font-weight: 600;
+            margin: 0 auto;
+
+        }
+        &__text{
+            padding-top: 22px;
+
+            margin: 0 auto;
+            width: 80%;
+            color: $dark;
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: -0.18px;
+            line-height: 24px;
+            text-align: center;
+
+        }
+        &:before {
+            z-index: -1;
+            top:40px;
+            left:5%;
+            position: absolute;
+            content: "";
+            height: 2px;
+            background: $lblue;
+            width: 80%;
+            margin-left: 15px;
+
+
+
+        }
+
+    }
+}
+.title__decision{
+    margin-top: 120px;
+    margin-bottom: 80px;
+}

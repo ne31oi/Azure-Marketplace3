@@ -1,0 +1,53 @@
+.section1{
+
+    background:
+    url("../../static/img/general/dcloud.png") no-repeat 110% 70%,
+    url("../../static/img/general/dcloud.png") no-repeat -10% 40%;
+    //background-size: 30%;
+    background-color: $lblue;
+
+    &__content{
+        background: url("../../static/img/general/azure.png") no-repeat;
+        padding-top: 121px;
+        padding-bottom: 195px;
+        background-position: 100% 50%;
+    }
+}
+.title_section1{
+    text-align: left;
+    color: $white;
+
+}
+
+.section1__left{
+    text-align: left;
+    width: 50%;
+    color: $white;
+    &__text{
+
+        padding-top: 26px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
+@media (max-width: 480px) {
+    .title_section1{
+        text-align: center;
+        //text-shadow: 1px 1px 1px $dark;
+    }
+    .section1{
+        background-image:none ;
+        &__content{
+            padding-top: 21px;
+            padding-bottom: 505px;
+            background-position: 50% 95%;
+
+
+        }
+        &__left{
+            width: 100%;
+            //text-shadow: 1px 1px 1px $dark;
+        }
+    }
+}

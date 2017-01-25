@@ -1,21 +1,44 @@
 .russia{
     background: $blue;
     padding: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &__image{
         width: 25%;
         padding-left: 22px;
+
     }
     &__text{
+        display: block;
+        padding-top: 20px;
         width: 75%;
         color: $white;
         padding-left: 70px;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: left;
         &__link{
             color: $green;
-            font-weight:bold;
+            font-weight:600;
             transition: color .5s;
             &:hover{
                 color: lighten($green,10%);
             }
         }
+    }
+}
+.sprite_russia{
+    width: 165px;
+    height: 99px;
+    background-position: -365px -1px;
+}
+@media (max-width: 480px) {
+    .russia{
+        &__image,&__text{
+            width: 100%;
+            padding-left: 0;
+        }
+
     }
 }
