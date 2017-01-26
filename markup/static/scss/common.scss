@@ -53,11 +53,11 @@ li{
     text-align: center;
 }
 .sprite{
-    background-image: url("../../static/img/general/sprite.png");
+    background-image: url("../../static/img/general/sprite2.png");
     background-repeat: no-repeat;
     margin: auto;
 }
-@media (max-width: 480px) {
+@media (max-width: 960px) {
     .row{
         width: 100%;
         padding-right: 10px;
@@ -70,4 +70,8 @@ li{
     .title{
         font-size: 40px;
     }
+}
+
+@media (max-width: 480px) {
+
 }

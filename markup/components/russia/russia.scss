@@ -33,12 +33,23 @@
     height: 99px;
     background-position: -365px -1px;
 }
+@media (max-width: 960px) {
+    .russia{
+        &__image{
+            width: 40%;
+            padding-left: 0;
+        }
+        &__text{
+            width: 60%;
+            padding-left: 0;
+        }
+
+    }
+}
 @media (max-width: 480px) {
     .russia{
         &__image,&__text{
             width: 100%;
-            padding-left: 0;
         }
-
     }
 }
